@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        
+        :root {
+            --color-green: #008751; 
+            --color-yellow: #fde84b; 
+            --color-red: #e30a17; 
+        }
+        
+        .senegal-border {
+            border-top: 4px solid var(--color-green);
+        }
+        .senegal-accent {
+            background-color: var(--color-yellow);
+        }
+        .senegal-link-hover:hover {
+            color: var(--color-red);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': 'var(--color-green)',
+                        'accent-yellow': 'var(--color-yellow)',
+                        'accent-red': 'var(--color-red)',
+                        'dark-bg': '#10172A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-gray-100 font-sans min-h-screen flex flex-col justify-center items-center p-4">
+
+    
+    <div class="w-full max-w-4xl bg-gray-800 shadow-2xl rounded-xl p-8 md:p-12 transition duration-300 transform hover:shadow-primary-green/50 senegal-border">
+        
+        
+        <header class="text-center mb-10">
+            
+            <div class="relative inline-block p-1 rounded-full bg-gradient-to-r from-primary-green via-accent-yellow to-accent-red mb-6">
+                <img 
+                    class="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover border-4 border-gray-800"
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQGpXApa9KfwCw/profile-displayphoto-scale_200_200/B4EZmBkkAXKQAc-/0/1758815470242?e=1766620800&v=beta&t=jH4q7Tzqx8BZ0oTNIOUfRCeRh17Kt5yb89DuKMSPSp4"
+                    onerror="this.onerror=null;this.src='https://media.licdn.com/dms/image/v2/D4E03AQGpXApa9KfwCw/profile-displayphoto-scale_200_200/B4EZmBkkAXKQAc-/0/1758815470242?e=1766620800&v=beta&t=jH4q7Tzqx8BZ0oTNIOUfRCeRh17Kt5yb89DuKMSPSp4';"
+                    alt="Profile Picture Placeholder"
+                >
+                
+                <svg class="absolute bottom-0 right-0 h-8 w-8 text-primary-green bg-accent-yellow p-1 rounded-full border-2 border-gray-800 shadow-lg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-1 text-accent-yellow">
+                Cheick S. Ly
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-gray-300">
+                Aspiring Software Engineer | Tech Enthiusiast
+            </p>
+        </header>
+
+       
+        <section class="mb-10 text-center">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-primary-green pb-2 inline-block">About Me</h2>
+            <p class="text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                A Computer Science student who loves using technology to solve real-world problems and have fun doing it. I grew up obsessed with games, pulling me into programming—watching people build mods, exploits, and systems in C, Java, and Python. I’m now focused on building software, learning new tools fast, and creating projects that help people. Still a gamer at heart, but always leveling up my skills.
+            </p>
+        </section>
+
+        
+        <section class="mb-10 text-center">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-primary-green pb-2 inline-block">Connect</h2>
+            <div class="flex justify-center space-x-8 text-3xl">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/cheick-ly-153632282/" target="_blank" class="text-gray-300 hover:text-accent-yellow senegal-link-hover transition duration-300" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/CheickLy" target="_blank" class="text-gray-300 hover:text-accent-yellow senegal-link-hover transition duration-300" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-6 border-b-2 border-primary-green pb-2 inline-block">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <!-- Project 1 -->
+                <div class="bg-gray-700 p-5 rounded-lg border-l-4 border-primary-green transition duration-300 hover:bg-gray-700/70">
+                    <h3 class="text-xl font-bold mb-2 text-accent-yellow">⚡️ Momentum Pulse AI: Viral Trend Detector</h3>
+                    <p class="text-sm text-gray-300 mb-3">
+                        AI Dashboard Blueprint, the Ultimate Viral Trend Detector.
+                    </p>
+                    <a href="https://github.com/CheickLy/TrendPredictor-Momentum-pulse-ai" class="text-primary-green hover:text-accent-red font-medium flex items-center">
+                        View Project
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-700 p-5 rounded-lg border-l-4 border-accent-yellow transition duration-300 hover:bg-gray-700/70">
+                    <h3 class="text-xl font-bold mb-2 text-accent-yellow">💸 BudgetMaxxing</h3>
+                    <p class="text-sm text-gray-300 mb-3">
+                        Python-based budgeting app built to help college students take control of their money — no spreadsheets, no guilt trips, just clarity.
+                    </p>
+                    <a href="#link2" class="text-primary-green hover:text-accent-red font-medium flex items-center">
+                        Project In Progress
+                        <i class="fas fa-code ml-2 text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-700 p-5 rounded-lg border-l-4 border-accent-red transition duration-300 hover:bg-gray-700/70">
+                    <h3 class="text-xl font-bold mb-2 text-accent-yellow">Defensive Mastermind Proposal EASPORTS</h3>
+                    <p class="text-sm text-gray-300 mb-3">
+                        New Defensive Tactic to better challenge top tier players within the MADDEN franchise.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1su7LGjmg08zo6o1oUTtLNMEjOYNvl9xH?usp=drive_link" class="text-primary-green hover:text-accent-red font-medium flex items-center">
+                        View Proposal
+                        <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-center text-gray-500 text-sm">
+        &copy; 2025 Cheick Ly. Inspired by Senegal and Mauritania.
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
